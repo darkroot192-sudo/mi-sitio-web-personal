@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otoniel - Estudiante ISC</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome para iconos de redes sociales -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de redes sociales fija en la parte superior -->
+    <div class="social-bar">
+        <div class="social-bar-content">
+            <span class="social-bar-title">Conéctate Conmigo:</span>
+            <div class="social-bar-links">
+                <a href="https://github.com/darkroot192-sudo" target="_blank" class="social-bar-btn github" title="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.facebook.com/share/1BmKPJh4KZ/" target="_blank" class="social-bar-btn facebook" title="Facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <button onclick="copyEmail()" class="social-bar-btn email" title="Copiar Email">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <main class="hero-container">
+        <div class="presentation-card">
+            <div class="name-section">
+                <h1 class="main-name">Otoniel Anastacio Mariscal</h1>
+                <h2 class="main-subtitle">Estudiante de Ingeniería en Sistemas Computacionales</h2>
+                <p class="main-description">UES San José del Rincón | Apasionado por la tecnología y la innovación</p>
+            </div>
+
+            <div class="action-buttons">
+                <a href="perfil.html" class="btn-primary">Ver Mi Perfil Personal</a>
+                <a href="cv.html" class="btn-secondary">Ver Mi CV Profesional</a>
+            </div>
+
+            <div class="skills-preview">
+                <h3 class="skills-title">Habilidades Principales</h3>
+                <div class="skills-tags">
+                    <span class="skill-tag">HTML & CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Desarrollo Web</span>
+                    <span class="skill-tag">Bases de Datos</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <p>© 2025 O-TECH SECURE - Hardware, Software y Talento</p>
+    </footer>
+
+    <script>
+        function copyEmail() {
+            const email = 'darkroot192@gmail.com'; 
+            navigator.clipboard.writeText(email).then(() => {
+                const btn = event.currentTarget;
+                const originalText = btn.querySelector('span').textContent;
+                btn.querySelector('span').textContent = '¡Copiado!';
+                
+                setTimeout(() => {
+                    btn.querySelector('span').textContent = originalText;
+                }, 2000);
+            }).catch(err => {
+                alert('Email: darkroot192@gmail.com');
+            });
+        }
+    </script>
+</body>
+</html>

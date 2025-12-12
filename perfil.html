@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - Otoniel</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+    <!-- Navegación -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-link">Inicio</a>
+        <a href="perfil.html" class="nav-link active">Mi Perfil</a>
+        <a href="cv.html" class="nav-link">Currículum</a>
+    </nav>
+
+    <main class="main-container">
+        <!-- Sección de Datos Personales -->
+        <section class="seccion-datos-personales">
+            <h1 class="titulo-principal">Datos Personales</h1>
+            <div class="datos-grid">
+                <div class="dato-item">
+                    <span class="dato-label">Nombre:</span>
+                    <span class="dato-valor">Otoniel Anastacio Mariscal</span>
+                </div>
+                <div class="dato-item">
+                    <span class="dato-label">Edad:</span>
+                    <span class="dato-valor">18 años</span>
+                </div>
+                <div class="dato-item">
+                    <span class="dato-label">Universidad:</span>
+                    <span class="dato-valor">UES San José del Rincón</span>
+                </div>
+                <div class="dato-item">
+                    <span class="dato-label">Carrera:</span>
+                    <span class="dato-valor">Ingeniería en Sistemas Computacionales</span>
+                </div>
+                <div class="dato-item">
+                    <span class="dato-label">Email:</span>
+                    <span class="dato-valor">darkroot192@gmail.com</span>
+                </div>
+                <div class="dato-item">
+                    <span class="dato-label">Ubicación:</span>
+                    <span class="dato-valor">San José del Rincón, Estado de México</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Galería de Imágenes - CARRUSEL -->
+        <section class="seccion-galeria">
+            <h2 class="titulo-seccion">Galería Personal</h2>
+            <div class="carousel-container">
+                <button class="carousel-btn prev" onclick="moveCarousel(-1)">
+                    <span>❮</span>
+                </button>
+                
+                <div class="carousel-wrapper">
+                    <div class="carousel-track">
+                        <div class="carousel-item active">
+                            <img src="img1.jpeg" alt="Descripción imagen 1" class="carousel-img">
+                            <p class="carousel-caption">No todo es código - También hay tiempo para el arte</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img2.jpeg" alt="Descripción imagen 2" class="carousel-img">
+                            <p class="carousel-caption">Meses de trabajo resumidos en 20 minutos - Todo valió la pena</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img3.jpeg" alt="Descripción imagen 3" class="carousel-img">
+                            <p class="carousel-caption">Diagnóstico y reparación: De la teoría a la práctica</p>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img4.jpeg" alt="Descripción imagen 4" class="carousel-img">
+                            <p class="carousel-caption">Loading next chapter... [████████░░] 80%</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <button class="carousel-btn next" onclick="moveCarousel(1)">
+                    <span>❯</span>
+                </button>
+                
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="currentSlide(0)"></span>
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Gustos e Intereses -->
+        <section class="seccion-gustos">
+            <h2 class="titulo-seccion">Mis Gustos e Intereses</h2>
+            <div class="gustos-container">
+                <div class="gusto-card">
+                    <h3 class="gusto-titulo">🎮 Hobbies</h3>
+                    <ul class="gusto-lista">
+                        <li>Tocar la batería</li>
+                        <li>Reparar dispositivos electrónicos</li>
+                        <li>Descubrir nuevas tecnologías sobre ciberseguridad y poner en práctica lo aprendido</li>
+                    </ul>
+                </div>
+                <div class="gusto-card">
+                    <h3 class="gusto-titulo">📚 Libros Favoritos</h3>
+                    <ul class="gusto-lista">
+                        <li>"El príncipe" - Maquiavelo</li>
+                        <li>"Maestría" - Robert Greene</li>
+                        <li>"Las 48 leyes del poder" - Robert Greene</li>
+                    </ul>
+                </div>
+                <div class="gusto-card">
+                    <h3 class="gusto-titulo">🎵 Música Favorita</h3>
+                    <ul class="gusto-lista">
+                        <li>Rosemary - Deftones</li>
+                        <li>Change - Deftones</li>
+                        <li>November Rain - Guns N' Roses</li>
+                    </ul>
+                </div>
+                <div class="gusto-card">
+                    <h3 class="gusto-titulo">🎬 Películas/Series</h3>
+                    <ul class="gusto-lista">
+                        <li>"Hackers"</li>
+                        <li>"Código enigma"</li>
+                        <li>"Ford vs Ferrari"</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Por Qué Te Gusta ISC -->
+        <section class="seccion-porque-isc">
+            <h2 class="titulo-seccion">¿Por Qué Me Gusta la Ingeniería en Sistemas Computacionales?</h2>
+            <div class="isc-content">
+                <div class="isc-texto">
+                    <p class="isc-parrafo">
+                        La sensación de comprender cómo funciona, manipular y hacer uso de las tecnologías enfocadas a la informática es algo que me llena de satisfacción y me impulsa a explorar nuevas fronteras.
+                        Me apasiona la Ingeniería en Sistemas Computacionales porque me permite 
+                        combinar creatividad con lógica para resolver problemas reales.
+                    </p>
+                    <p class="isc-parrafo">
+                        La tecnología está transformando el mundo, y ser parte de esa transformación 
+                        es increíblemente motivador.
+                    </p>
+                </div>
+                <div class="isc-razones">
+                    <div class="razon-item">
+                        <span class="razon-icono">💡</span>
+                        <h4 class="razon-titulo">Innovación</h4>
+                        <p class="razon-desc">Crear soluciones nuevas</p>
+                    </div>
+                    <div class="razon-item">
+                        <span class="razon-icono">🚀</span>
+                        <h4 class="razon-titulo">Futuro</h4>
+                        <p class="razon-desc">Tecnología de vanguardia</p>
+                    </div>
+                    <div class="razon-item">
+                        <span class="razon-icono">🧩</span>
+                        <h4 class="razon-titulo">Desafíos</h4>
+                        <p class="razon-desc">Resolver problemas complejos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Habilidades -->
+        <section class="seccion-habilidades">
+            <h2 class="titulo-seccion">Mis Habilidades</h2>
+            <div class="habilidades-container">
+                <!-- Habilidades Técnicas -->
+                <div class="habilidades-grupo">
+                    <h3 class="habilidades-subtitulo">Habilidades Técnicas</h3>
+                    <div class="habilidad-item">
+                        <div class="habilidad-header">
+                            <span class="habilidad-nombre">HTML & CSS</span>
+                            <span class="habilidad-porcentaje">85%</span>
+                        </div>
+                        <div class="habilidad-barra">
+                            <div class="habilidad-progreso" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad-item">
+                        <div class="habilidad-header">
+                            <span class="habilidad-nombre">JavaScript</span>
+                            <span class="habilidad-porcentaje">70%</span>
+                        </div>
+                        <div class="habilidad-barra">
+                            <div class="habilidad-progreso" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad-item">
+                        <div class="habilidad-header">
+                            <span class="habilidad-nombre">Python</span>
+                            <span class="habilidad-porcentaje">60%</span>
+                        </div>
+                        <div class="habilidad-barra">
+                            <div class="habilidad-progreso" style="width: 60%;"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Habilidades Blandas -->
+                <div class="habilidades-grupo">
+                    <h3 class="habilidades-subtitulo">Habilidades Blandas</h3>
+                    <div class="habilidad-item">
+                        <div class="habilidad-header">
+                            <span class="habilidad-nombre">Trabajo en Equipo</span>
+                            <span class="habilidad-porcentaje">90%</span>
+                        </div>
+                        <div class="habilidad-barra">
+                            <div class="habilidad-progreso" style="width: 90%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad-item">
+                        <div class="habilidad-header">
+                            <span class="habilidad-nombre">Comunicación</span>
+                            <span class="habilidad-porcentaje">80%</span>
+                        </div>
+                        <div class="habilidad-barra">
+                            <div class="habilidad-progreso" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <div class="habilidad-item">
+                        <div class="habilidad-header">
+                            <span class="habilidad-nombre">Resolución de Problemas</span>
+                            <span class="habilidad-porcentaje">85%</span>
+                        </div>
+                        <div class="habilidad-barra">
+                            <div class="habilidad-progreso" style="width: 85%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Música -->
+        <section class="seccion-musica">
+            <h2 class="titulo-seccion">Mi Playlist</h2>
+            <div class="musica-container">
+                <div class="audio-player">
+                    <h4 class="audio-titulo">Change - Deftones</h4>
+                    <audio controls class="audio-control">
+                        <source src="Change - Deftones.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio HTML5.
+                    </audio>
+                </div>
+                <div class="audio-player">
+                    <h4 class="audio-titulo">Given Up - Linkin Park</h4>
+                    <audio controls class="audio-control">
+                        <source src="Given Up- linkin Park.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio HTML5.
+                    </audio>
+                </div>
+                <div class="audio-player">
+                    <h4 class="audio-titulo">Rosemary - Deftones</h4>
+                    <audio controls class="audio-control">
+                        <source src="Rosemary-Deftones.mp3" type="audio/mpeg">
+                        Tu navegador no soporta audio HTML5.
+                    </audio>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Videos -->
+        <section class="seccion-videos">
+            <h2 class="titulo-seccion">Mis Videos</h2>
+            <div class="videos-grid">
+                <div class="video-item">
+                    <video controls class="video-player">
+                        <source src="video1.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                    <p class="video-caption">Descripción del video 1</p>
+                </div>
+                <div class="video-item">
+                    <video controls class="video-player">
+                        <source src="video2.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                    <p class="video-caption">Descripción del video 2</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 O-TECH SECURE - Otoniel | Estudiante de ISC</p>
+    </footer>
+
+    <!-- Script del Carrusel -->
+    <script>
+        let currentIndex = 0;
+        const items = document.querySelectorAll('.carousel-item');
+        const dots = document.querySelectorAll('.dot');
+        const totalItems = items.length;
+
+        function showSlide(index) {
+            // Asegurar que el índice esté en el rango válido
+            if (index >= totalItems) {
+                currentIndex = 0;
+            } else if (index < 0) {
+                currentIndex = totalItems - 1;
+            } else {
+                currentIndex = index;
+            }
+
+            // Ocultar todos los items
+            items.forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Remover active de todos los dots
+            dots.forEach(dot => {
+                dot.classList.remove('active');
+            });
+
+            // Mostrar el item actual
+            items[currentIndex].classList.add('active');
+            dots[currentIndex].classList.add('active');
+        }
+
+        function moveCarousel(direction) {
+            showSlide(currentIndex + direction);
+        }
+
+        function currentSlide(index) {
+            showSlide(index);
+        }
+
+        // Auto-play opcional (descomenta para activar)
+        // setInterval(() => {
+        //     moveCarousel(1);
+        // }, 5000);
+    </script>
+</body>
+</html>
